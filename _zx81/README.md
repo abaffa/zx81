@@ -1,6 +1,10 @@
 # Sinclair ZX81 Datasheet
 
 * [Hardware](hardware.md)
+* [Maintenance](maintenance.md)
+* [Troubleshooting](troubleshooting.md)
+* [Mods](mods.md)
+
 
 The ZX81 is the third computer from Sir Clive Sinclair's company, following the MK14 and the ZX80. Even having a relatively simple electronics, since it is made up of only 4 chips, it represents a significant improvement over its predecessor ZX80.
 
