@@ -1,6 +1,12 @@
 # ZX80/81 Project
 A tribute repository for the Sinclair ZX81 homecomputer. Or... how I build my own zeddy.
 
+## Technical Information about ZX81
+* [ZX81 Datasheet](_zx81/README.md)
+* [ZX80/81 Project - Schematics](schema/README.md)
+
+---
+
 ![Starting Project](_images/z2IMG_20210205_130541654.jpg "Starting Project")
 
 Starting Project
