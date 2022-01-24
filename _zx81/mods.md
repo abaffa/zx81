@@ -12,7 +12,7 @@ The diagram shown below shows the modification corresponding to 32 KB:
 
 Below is the schematic for 16 kB:
 
-![16KB Ram](_images/ZX81_ampliacion%20interna%2016k.png "16KB Ram")
+![16KB Ram](_images/ZX81_ampliacion%20interna%2016k.jpg "16KB Ram")
 
 ![Cables HGR](_images/ZX81_7_SRAM.jpg "Cables HGR")
 
@@ -24,7 +24,7 @@ Once this modification has been made, certain errors have been detected when exe
 
 ![Cartoon WRX](_images/ZX81_SRAM_cartoon1_WRX.jpg "Cartoon WRX")
 
-![Cartoon Original](_images/ZX81_SRAM_cartoon1_WRX_original.bmp "Cartoon Original")
+![Cartoon Original](_images/ZX81_SRAM_cartoon1_WRX_original.jpg "Cartoon Original")
 
 
 There is no clear explanation for the error obtained, but it points to a higher speed of current SRAM memories compared to older ones. The proposed solution was found at random, and consists of putting a capacitor between the /RAMCS signal (pin 20) and GND (pin 22). The suggested capacitor value ranges from 33 pF to 68 pF, passing through values of 47 pF and 56 pF.
