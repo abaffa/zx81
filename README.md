@@ -3,6 +3,7 @@ A tribute repository for the Sinclair ZX81 homecomputer. Or... how I build my ow
 
 ## Technical Information about ZX81
 * [ZX81 Datasheet](_zx81/README.md)
+* [ZX81 Peripherals](_zx81/peripherals/README.md)
 * [ZX80/81 Project - Schematics](schema/README.md)
 
 ---
