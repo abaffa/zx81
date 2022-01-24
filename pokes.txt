@@ -30,3 +30,8 @@ POKE 16418,0
 
 from within a program gives to 2 more lines at the bottom of the screen to be PRINTed AT (so the full screen 24x32 may be used by the program).
 But set it back to the normal value 2, if you want to INPUT data (needs that 2 lines).
+
+
+
+--- Print Total Memory
+PRINT PEEK 16388+256*PEEK 16389
