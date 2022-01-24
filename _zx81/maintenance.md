@@ -46,7 +46,7 @@ source: 33, 75, 82 and 100 ohms.
 
 ![Composite Video2](_images/ZX81_video_mod.gif?raw=true "Composite Video2")
 
-![Composite Video3](_images/ZX81_video_mod2.png?raw=true "Composite Video3")
+![Composite Video3](_images/ZX81_video_mod2.jpg?raw=true "Composite Video3")
 
 
 ## Keyboard Membrane Replacement
