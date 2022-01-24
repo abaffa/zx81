@@ -4,11 +4,11 @@
 
 Issue #1. Made with curved traces and handmade. The board has the “solder mask” on the solder side in green. Most plates are green on the component side as well, although some plates can be found to be the color of the raw material on the plate.
 
-![Issue 1](_zx81/_images/ZX81_issue1.jpg?raw=true "Issue 1")
+![Issue 1](_images/ZX81_issue1.jpg?raw=true "Issue 1")
 
-![Issue 1_yellow](_zx81/_images/ZX81_issue1_amarillo.jpg?raw=true "Issue 1 Yellow")
+![Issue 1_yellow](_images/ZX81_issue1_amarillo.jpg?raw=true "Issue 1 Yellow")
 
-![Issue 1_green](_zx81/_images/ZX81_issue1_verde.jpg?raw=true "Issue 1 Green")
+![Issue 1_green](_images/ZX81_issue1_verde.jpg?raw=true "Issue 1 Green")
 
 
 
@@ -17,9 +17,9 @@ Issue #2. It is a fairly difficult prototype to find. It is a unit that was made
 
 Issue #3. Made with CAD design and straight lines. The board has the solder mask on the solder side in red.
 
-![Issue 3](_zx81/_images/ZX81_issue3%20copia.jpg?raw=true "Issue 3")
+![Issue 3](_images/ZX81_issue3%20copia.jpg?raw=true "Issue 3")
 
-![Issue 3_red](_zx81/_images/ZX81_issue3_rojo.jpg?raw=true "Issue 3 Red")
+![Issue 3_red](_images/ZX81_issue3_rojo.jpg?raw=true "Issue 3 Red")
 
 
 ## CPUs
@@ -32,7 +32,7 @@ The CPU models that may appear in the ZX81 are:
 
 The pin layout or “pinout” is shown in the following figure:
 
-![cpu_pinout](_zx81/_images/Z80_CPU_pin-out.png?raw=true "CPU Pinout")
+![cpu_pinout](_images/Z80_CPU_pin-out.png?raw=true "CPU Pinout")
 
 
 ## ROM
@@ -77,7 +77,7 @@ To calculate the ROM checksum, enter the following code:
 
 The ROM pinout is shown in the following figure:
 
-![rom_pinout](_zx81/_images/ROM.jpg?raw=true "ROM Pinout")
+![rom_pinout](_images/ROM.jpg?raw=true "ROM Pinout")
 
 
 ## RAM
@@ -94,11 +94,11 @@ The boards can have two different models of RAM mounted:
 
 The pinouts of the different options are shown in the following figures:
 
-![Ram_2114](_zx81/_images/RAM%202114.jpg?raw=true "RAM 2114")
+![Ram_2114](_images/RAM%202114.jpg?raw=true "RAM 2114")
 
-![Ram_4118_4801](_zx81/_images/RAM%204118_4801.jpg?raw=true "RAM 4118/4801")
+![Ram_4118_4801](_images/RAM%204118_4801.jpg?raw=true "RAM 4118/4801")
 
-![Ram_4816](_zx81/_images/RAM%204816.jpg?raw=true "RAM 4816")
+![Ram_4816](_images/RAM%204816.jpg?raw=true "RAM 4816")
 
 
 ## ULA
@@ -118,7 +118,7 @@ from the back porch.
 
 The pinout is common to all versions of ULA and can be seen in the figure below.
 
-![ULA_Pinout](_zx81/_images/ULA.jpg?raw=true "ULA Pinout")
+![ULA_Pinout](_images/ULA.jpg?raw=true "ULA Pinout")
 
 
 ## Transistors
@@ -150,11 +150,76 @@ install it. A simple push button between the pins of capacitor C5 enables the re
 
 The way the ZX81 encodes video memory is slightly different if we have more than 3.25kB of RAM or less. In the case of having more than 3.25kB, the screen lines are encoded in the so-called expanded mode and always have the same size: 24 x 32 bytes (768 bytes + 25 bytes in HALT instructions = 793 bytes). The first byte in video memory is a HALT opcode, and each line is terminated with a HALT (end of line).
 
-![dfile](_zx81/_images/pantalla%201.jpg?raw=true "Display File")
+![dfile](_images/pantalla%201.jpg?raw=true "Display File")
 
 
 In the case of having less than 3.25kB, the minimum size is 25 bytes, which corresponds to the first byte (HALT), plus 1 byte (HALT) for each of the 24 rows. That is, an empty screen occupies 25 bytes.
 
 The following figure shows an example of the space occupied by the rendering after running the program in Basic on a computer with less than 3.25 kB of RAM. 
 
-![dfile2](_zx81/_images/pantalla%202.jpg?raw=true "Display File 2")
+![dfile2](_images/pantalla%202.jpg?raw=true "Display File 2")
+
+
+## Expansion Port
+
+The expansion port of the ZX81 is made up of a 46-pin male connector, although in reality 44 are used. The other two serve as placement marks.
+
+![expansion_port](_images/expansion.jpg "Expansion Port")
+
+| Top side |  |  | Bottom Side | 
+|----------|--|--|-------------|
+| 1A | D7 | 1B | 5V |
+| 2A | RAMCS | 2B |  |
+| 3A | --SLOT-- | 3B | --SLOT-- |
+| 4A | D0 | 4B | GND |
+| 5A | D1 | 5B | GND |
+| 6A | D2 | 6B | CLK |
+| 7A | D6 | 7B | A1 |
+| 8A | D5 | 8B | A2 |
+| 9A | D3 | 9B | A3 |
+| 10A | D4 | 10B | A4 |
+| 11A | /INT | 1B | A15 |
+| 12A | /NMI | 1B | A14 |
+| 13A | /HALT | 1B | A13 |
+| 14A | /MREQ | 1B | A12 |
+| 15A | /IORQ | 1B | A11 |
+| 16A | /RD | 1B | A10 |
+| 17A | /WR | 1B | A9 |
+| 18A | /BUSAK | 1B | A8 |
+| 19A | /WAIT | 1B | A7 |
+| 20A | /BUSRQ | 1B | A6 |
+| 21A | /RESET | 1B | A5 |
+| 22A | /M1 | 1B | A4 |
+| 23A | /RFSH | 1B | /ROMCS |
+
+
+| Signal  | Name  | Active | Direction |
+|---|---|---|---|
+| Address Bus | A0-A15 | HIGH | output |
+| Data Bus | D0'-D7' | HIGH | bi-directional |
+| Memory Request | /MREQ | LOW | output |
+| I/O Request | /IORQ | LOW | output |
+| Read | /RD | LOW | output |
+| Write | /WR | LOW | output |
+| ROM Selection | /ROMCS' | LOW | n/a |
+| RAM Selection | /RAMCS | LOW | n/a |
+| Reset | /RESET | LOW | n/a |
+| Halt | /HALT | LOW | output |
+| Wait | /WAIT | LOW | input |
+| Bus Request | /BUSRQ | LOW | input |
+| Bus Acknowledge | /BUSAK | LOW | output |
+| Clock | /CLK | LOW | output |
+| Refresh | /RFSH | LOW | output |
+| Non-maskable Interruption | /NMI | LOW | intput |
+| Interruption | /INT | LOW | input |
+| Machine Cycle 1 | /M1 | LOW | output |
+
+
+## External Connectors
+
+|  RING  |  TYPE  |  CONNECTOR  |  TIP  |
+|--------|--------|-------------|-------|
+|  TV Video  | RCA female 3.5 mm  |  GND |  TV signal  |
+|  EAR  |  3.5 mm female jack  |  GND  |  Cassette input | 
+|  MIC  |  3.5 mm female jack  |  GND  |  Cassette input  |
+|  Power Source  |  3.5mm female jack  |  GND  |  9V DC  |
