@@ -24,12 +24,14 @@ The computer has no sound or color, working only in black and white and with lim
 
 The keyboard is another of the characteristics of this computer, formed by a discussed membrane of 40 multifunction touch keys.
 
-The computer uses Sinclair Basic as its programming language, whose interpreter is in ROM, in addition to the processor's own machine language. Although it is possible to find assemblers for other languages ​​such as Forth.
+The computer uses Sinclair Basic as its programming language, whose interpreter is in ROM, in addition to the processor's own machine language. Although it is possible to find assemblers for other languages such as Forth.
 
 
 It has an internal consumption in basic configuration of between 310 and 390 mA.
 
 
+| Item  | Value |
+| ------------- | ------------- |
 |  Name |  Sinclair ZX81 |
 |  Origin |  United Kingdom |
 |  Launched |  March, 5th 1981 |
