@@ -7,6 +7,8 @@
 * [List of Components](bom.md)
 
 
+![Sinclair ZX81](_images/Sinclair_ZX81_Setup.jpg "Sinclair ZX81")
+
 The ZX81 is the third computer from Sir Clive Sinclair's company, following the MK14 and the ZX80. Even having a relatively simple electronics, since it is made up of only 4 chips, it represents a significant improvement over its predecessor ZX80.
 
 The computer is based on Zilog's Z80A microprocessor, with fairly limited RAM memory (1 kB), although expandable; and an 8 kB ROM that increased the 4 kb that the ZX80 had.
