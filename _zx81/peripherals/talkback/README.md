@@ -3,7 +3,8 @@
 * [Mageco Eletronic SPO256 ZX81 Vocal Synthetizer Manual in French](MANUEL-ZX81-SPO256[MAGECO].pdf)
 * [Eletronics - The Maplin Magazine Mar, 05th 1983](Maplin-Electronics-1983-03-05.pdf)
 
-# ZX81 Talk~Back by Dave Goodman (Maplin Magazine March 1983, UK)
+# ZX81 Talk~Back by Dave Goodman
+(Maplin Magazine March 1983, UK)
 
 ![ZX81](_images/zx81bm1.gif "ZX81")
 
@@ -158,4 +159,5 @@ Table 1
 
 ![TalkBack original Schema](_images/TalkBack_SPO256al2.jpg "TalkBack original Schema")
 
-![TalkBack Modified Schema](_images/TalkBack_SPO256al2_modified by 1024MAK.png "TalkBack Modified Schema")
+![TalkBack Modified Schema](_images/TalkBack_SPO256al2_modified%20by%201024MAK.png "TalkBack Modified Schema")
+
