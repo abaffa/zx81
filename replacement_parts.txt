@@ -1,0 +1,42 @@
+ZX Spectrum 48k
+
+All versions
+ZTX213 can be replaced with BC251, BC307, BC512, BC557
+ZTX313 can be replaced with BC172, BC183, BC238, BC383
+ZTX650 can be replaced with BC537, BC737, BC487, BC489, BC538 (using BC487 in TR4 position may cause overheating)
+BC184 can be replaced with BC384, BC413, BC550
+
+For issue 2 boards and above
+ZTX650 can be replaced with ZTX651 in TR4 position
+ZTX213 can be replaced with ZTX750 in TR5 position
+ZTX313 can be replaced with BC547, BC548 and BC549 in TR1/TR2 position (Usually improves picture quality significantly)
+BA157 can be replaced by BA158 or 1N4937 fast recovery diodes
+
+For issue 3 boards and above
+ZTX450 can be replaced with ZTX650/651 in TR7 position
+ZTX313 can be replaced with BC184 in TR8 - TR9 position
+
+Issue 3B
+TR1, TR2, TR3 and TR6 can be replaced with MPS2369
+
+Issue 6A
+TR8 and TR9 can be replaced with BC549B
+
+Spectrum +3
+TR1 in the +3 PSU is an H1061. Possible alternatives include the BD243C and TIP41C
+
+Integrated Circuits
+
+RAM
+MM5920N (national Semiconductors) chips are equivalent to 4116 RAM chips
+AM9016EDC (AMD) chips are the same as 4116 chips.
+IMS2600P-12 (Inmos) chips work in any upper RAM position (IC15-22)
+41256 chips work in place of 4164 upper RAM chips
+V53C256P80L chips work in any upper RAM position (IC15-22)
+MN41257-12 chips work in any upper RAM position (IC15-22)
+
+Logic
+74LSxx series chips can be replaced with 74HCTxx series chips
+
+CPU
+Various makes of Z80 processor are used on Spectrums. Zilog Z80 CPU NEC D780C

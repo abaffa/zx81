@@ -1,0 +1,32 @@
+RAND USR 963 - clears the program area
+RAND USR 3086 - scrolls the screen up one line
+RAND USR 681 - in FAST mode, prevents the report code from being displayed at the end of a program
+RAND USR 0 - clears the program area and RAMTOP
+RAND USR 836 - loads a program and stops it if it is self-starting! (fast mode)
+RAND USR 757 - In FAST mode, saves a program without a name
+RAND USR 3292 - equivalent to STOP
+RAND USR 3875 - equivalent to FAST
+RAND USR 1476 - equivalent to EDIT
+RAND USR 930 - equivalent to BREAK
+RAND USR 2955 - equivalent to the , (comma) in a PRINT statement
+
+POKE 16510,0 - makes the first program line uneditable
+POKE 16389,68 - sets up a minimal display file for 16K users
+
+---
+
+
+Ab better way is to start editing a new program with line 1 and a copyright note:
+1 REM COPYRIGHT ...
+
+Then do a POKE 16509, 40
+
+That will change the line number to "A280", which can neither be edited nor deleted.
+And because that is a big line number, all further BASIC lines will be inserted before that line, so the lines moves up in memory and cannot be found easily (to POKE it back to a valid line number).
+
+
+---
+POKE 16418,0
+
+from within a program gives to 2 more lines at the bottom of the screen to be PRINTed AT (so the full screen 24x32 may be used by the program).
+But set it back to the normal value 2, if you want to INPUT data (needs that 2 lines).
