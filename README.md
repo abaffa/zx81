@@ -1,6 +1,8 @@
 # ZX80/81 Project
 A tribute repository for the Sinclair ZX81 homecomputer. Or... how I build my own zeddy.
 
+I used the PCB designed by Wilco2009. You can get more info about (eagle/gerbers) at his repos (https://github.com/wilco2009/zx80-81-Double-Clone)
+
 ## Technical Information about ZX81
 * [ZX81 Datasheet](_zx81/README.md)
 * [ZX81 Peripherals](_zx81/peripherals/README.md)
